@@ -33,6 +33,14 @@ try:
 except URLError as e:
  streamlit.error()
 
+streamlit.header("Lista owoców zawiera:")
+def get_fruit_load_list():
+  with my_cnx_cursor() as my_cur:
+    my_cur.execute("select * from FRUIT_LOAD_LIST")
+    return my_curr_fetchall()
+  
+
+
 
 
 
