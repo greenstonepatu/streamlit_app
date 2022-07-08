@@ -29,8 +29,8 @@ try:
     streamlit.error("Proszę wybierz jakiś owoc")
   else:
     back_from_get_fruityvice_data = get_fruityvice_data(fruit_choice)
- except URLError as e:
-  streamlit.error()
+except URLError as e:
+ streamlit.error()
 
 
 
