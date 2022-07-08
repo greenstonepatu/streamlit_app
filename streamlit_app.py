@@ -30,7 +30,7 @@ try:
   else:
     back_from_get_fruityvice_data = get_fruityvice_data(fruit_choice)
  except URLError as e:
- streamlit.error()
+  streamlit.error()
 
 
 
